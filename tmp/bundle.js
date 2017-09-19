@@ -50553,8 +50553,7 @@ require('source-map-support').install({environment: 'node'});
 /* 621 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';exports.__esModule=true;exports.default=undefined;var _classCallCheck2=__webpack_require__(187);var _classCallCheck3=_interopRequireDefault(_classCallCheck2);var _possibleConstructorReturn2=__webpack_require__(188);var _possibleConstructorReturn3=_interopRequireDefault(_possibleConstructorReturn2);var _inherits2=__webpack_require__(255);var _inherits3=_interopRequireDefault(_inherits2);var _dec,_class;var _react=__webpack_require__(10);var _react2=_interopRequireDefault(_react);var _reactRedux=__webpack_require__(622);var _reactTagcloud=__webpack_require__(623);var _actions=__webpack_require__(624);var _actions2=_interopRequireDefault(_actions);var _rubix=__webpack_require__(265);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}/* 
-	const data = {rainbow1: [
+	'use strict';exports.__esModule=true;exports.default=undefined;var _classCallCheck2=__webpack_require__(187);var _classCallCheck3=_interopRequireDefault(_classCallCheck2);var _possibleConstructorReturn2=__webpack_require__(188);var _possibleConstructorReturn3=_interopRequireDefault(_possibleConstructorReturn2);var _inherits2=__webpack_require__(255);var _inherits3=_interopRequireDefault(_inherits2);var _dec,_class;var _react=__webpack_require__(10);var _react2=_interopRequireDefault(_react);var _reactRedux=__webpack_require__(622);var _reactTagcloud=__webpack_require__(623);var _actions=__webpack_require__(624);var _actions2=_interopRequireDefault(_actions);var _rubix=__webpack_require__(265);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var data={rainbow1:[{value:"jQuery",count:25},{value:"MongoDB",count:18},{value:"JavaScript",count:38},{value:"React",count:30},{value:"Nodejs",count:28},{value:"Express.js",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}],rainbow2:[{value:"jQuery",count:25},{value:"MongoDB",count:18},{value:"JavaScript",count:38},{value:"React",count:30},{value:"Nodejs",count:28},{value:"Express.js",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}],rainbow3:[{value:"jQuery",count:25},{value:"MongoDB",count:18},{value:"JavaScript",count:38},{value:"React",count:30},{value:"Nodejs",count:28},{value:"Express.js",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}]};function MultipleCloud(data){var result=[];for(var rainbow in data){result.push(_react2.default.createElement(_reactTagcloud.TagCloud,{minSize:12,maxSize:35,tags:data[rainbow],className:'simple-cloud',onClick:function onClick(tag){return alert('\''+tag.value+'\' was selected!');}}));}return result;}/* const data = [[
 	  { value: "jQuery", count: 25 }, { value: "MongoDB", count: 18 },
 	  { value: "JavaScript", count: 38 }, { value: "React", count: 30 },
 	  { value: "Nodejs", count: 28 }, { value: "Express.js", count: 25 },
@@ -50564,9 +50563,19 @@ require('source-map-support').install({environment: 'node'});
 	  { value: "Mocha", count: 17 }, { value: "React Native", count: 27 },
 	  { value: "Angular.js", count: 30 }, { value: "TypeScript", count: 15 },
 	  { value: "Flow", count: 30 }, { value: "NPM", count: 11 },
-	], rainbow2: [
-	  { value: "jQuery", count: 25 }, { value: "MongoDB", count: 18 },
-	  { value: "JavaScript", count: 38 }, { value: "React", count: 30 },
+	], [
+	  { value: "Cloud", count: 25 }, { value: "Tag", count: 18 },
+	  { value: "Arya", count: 38 }, { value: "Theon", count: 30 },
+	  { value: "Jon", count: 28 }, { value: "Snow", count: 25 },
+	  { value: "HTML5", count: 33 }, { value: "CSS3", count: 20 },
+	  { value: "Webpack", count: 22 }, { value: "Babel.js", count: 7 },
+	  { value: "ECMAScript", count: 25 }, { value: "Jest", count: 15 },
+	  { value: "Mocha", count: 17 }, { value: "React Native", count: 27 },
+	  { value: "Angular.js", count: 30 }, { value: "TypeScript", count: 15 },
+	  { value: "Flow", count: 30 }, { value: "NPM", count: 11 },
+	], [
+	  { value: "NightWatch", count: 25 }, { value: "CastleBlack", count: 18 },
+	  { value: "KingsLanding", count: 38 }, { value: "Winterfell", count: 30 },
 	  { value: "Nodejs", count: 28 }, { value: "Express.js", count: 25 },
 	  { value: "HTML5", count: 33 }, { value: "CSS3", count: 20 },
 	  { value: "Webpack", count: 22 }, { value: "Babel.js", count: 7 },
@@ -50574,17 +50583,15 @@ require('source-map-support').install({environment: 'node'});
 	  { value: "Mocha", count: 17 }, { value: "React Native", count: 27 },
 	  { value: "Angular.js", count: 30 }, { value: "TypeScript", count: 15 },
 	  { value: "Flow", count: 30 }, { value: "NPM", count: 11 },
-	], rainbow3: [
-	  { value: "jQuery", count: 25 }, { value: "MongoDB", count: 18 },
-	  { value: "JavaScript", count: 38 }, { value: "React", count: 30 },
-	  { value: "Nodejs", count: 28 }, { value: "Express.js", count: 25 },
-	  { value: "HTML5", count: 33 }, { value: "CSS3", count: 20 },
-	  { value: "Webpack", count: 22 }, { value: "Babel.js", count: 7 },
-	  { value: "ECMAScript", count: 25 }, { value: "Jest", count: 15 },
-	  { value: "Mocha", count: 17 }, { value: "React Native", count: 27 },
-	  { value: "Angular.js", count: 30 }, { value: "TypeScript", count: 15 },
-	  { value: "Flow", count: 30 }, { value: "NPM", count: 11 },
-	] }; */var data=[[{value:"jQuery",count:25},{value:"MongoDB",count:18},{value:"JavaScript",count:38},{value:"React",count:30},{value:"Nodejs",count:28},{value:"Express.js",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}],[{value:"Cloud",count:25},{value:"Tag",count:18},{value:"Arya",count:38},{value:"Theon",count:30},{value:"Jon",count:28},{value:"Snow",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}],[{value:"NightWatch",count:25},{value:"CastleBlack",count:18},{value:"KingsLanding",count:38},{value:"Winterfell",count:30},{value:"Nodejs",count:28},{value:"Express.js",count:25},{value:"HTML5",count:33},{value:"CSS3",count:20},{value:"Webpack",count:22},{value:"Babel.js",count:7},{value:"ECMAScript",count:25},{value:"Jest",count:15},{value:"Mocha",count:17},{value:"React Native",count:27},{value:"Angular.js",count:30},{value:"TypeScript",count:15},{value:"Flow",count:30},{value:"NPM",count:11}]];var MultipleCloud=data.map(function(cloud){return _react2.default.createElement(_reactTagcloud.TagCloud,{minSize:12,maxSize:35,tags:cloud,className:'simple-cloud',onClick:function onClick(tag){return alert('\''+tag.value+'\' was selected!');}});});var Home=(_dec=(0,_reactRedux.connect)(function(state){return state;}),_dec(_class=function(_React$Component){(0,_inherits3.default)(Home,_React$Component);function Home(){(0,_classCallCheck3.default)(this,Home);return(0,_possibleConstructorReturn3.default)(this,_React$Component.apply(this,arguments));}Home.fetchData=function fetchData(store){return store.dispatch(_actions2.default.getGreeting('Hello, World!'));};Home.prototype.render=function render(){return _react2.default.createElement(_rubix.PanelContainer,null,_react2.default.createElement(_rubix.Panel,null,_react2.default.createElement(_rubix.PanelBody,null,_react2.default.createElement(_rubix.Grid,null,_react2.default.createElement(_rubix.Row,null,_react2.default.createElement(_rubix.Col,{xs:12},_react2.default.createElement('p',null,this.props.greetings.hello),MultipleCloud))))));};return Home;}(_react2.default.Component))||_class);exports.default=Home;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(data,'data','D:/TAP/redux-seed/src/routes/Home.js');__REACT_HOT_LOADER__.register(MultipleCloud,'MultipleCloud','D:/TAP/redux-seed/src/routes/Home.js');__REACT_HOT_LOADER__.register(Home,'Home','D:/TAP/redux-seed/src/routes/Home.js');}();;
+	]];
+	
+	const MultipleCloud = data.map(cloud =>
+	    <TagCloud minSize={12}
+	      maxSize={35}
+	      tags={cloud}
+	      className="simple-cloud"
+	      onClick={tag => alert(`'${tag.value}' was selected!`)} />
+	); */var Home=(_dec=(0,_reactRedux.connect)(function(state){return state;}),_dec(_class=function(_React$Component){(0,_inherits3.default)(Home,_React$Component);function Home(){(0,_classCallCheck3.default)(this,Home);return(0,_possibleConstructorReturn3.default)(this,_React$Component.apply(this,arguments));}Home.fetchData=function fetchData(store){return store.dispatch(_actions2.default.getGreeting('Hello, World!'));};Home.prototype.render=function render(){return _react2.default.createElement(_rubix.PanelContainer,null,_react2.default.createElement(_rubix.Panel,null,_react2.default.createElement(_rubix.PanelBody,null,_react2.default.createElement(_rubix.Grid,null,_react2.default.createElement(_rubix.Row,null,_react2.default.createElement(_rubix.Col,{xs:12},_react2.default.createElement('p',null,this.props.greetings.hello),MultipleCloud(data)))))));};return Home;}(_react2.default.Component))||_class);exports.default=Home;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(data,'data','D:/TAP/redux-seed/src/routes/Home.js');__REACT_HOT_LOADER__.register(MultipleCloud,'MultipleCloud','D:/TAP/redux-seed/src/routes/Home.js');__REACT_HOT_LOADER__.register(Home,'Home','D:/TAP/redux-seed/src/routes/Home.js');}();;
 
 /***/ }),
 /* 622 */

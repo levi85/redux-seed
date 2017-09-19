@@ -13,7 +13,7 @@ import {
   PanelContainer,
 } from '@sketchpixy/rubix';
 
-/* 
+
 const data = {rainbow1: [
   { value: "jQuery", count: 25 }, { value: "MongoDB", count: 18 },
   { value: "JavaScript", count: 38 }, { value: "React", count: 30 },
@@ -44,9 +44,23 @@ const data = {rainbow1: [
   { value: "Mocha", count: 17 }, { value: "React Native", count: 27 },
   { value: "Angular.js", count: 30 }, { value: "TypeScript", count: 15 },
   { value: "Flow", count: 30 }, { value: "NPM", count: 11 },
-] }; */
+] };
 
-const data = [[
+function MultipleCloud(data) {
+
+  let result = [];
+  for (var rainbow in data) {
+    result.push(<TagCloud minSize={12}
+      maxSize={35}
+      tags={data[rainbow]}
+      className="simple-cloud"
+      onClick={tag => alert(`'${tag.value}' was selected!`)} />)
+  }
+
+  return result;
+}
+
+/* const data = [[
   { value: "jQuery", count: 25 }, { value: "MongoDB", count: 18 },
   { value: "JavaScript", count: 38 }, { value: "React", count: 30 },
   { value: "Nodejs", count: 28 }, { value: "Express.js", count: 25 },
@@ -84,7 +98,7 @@ const MultipleCloud = data.map(cloud =>
       tags={cloud}
       className="simple-cloud"
       onClick={tag => alert(`'${tag.value}' was selected!`)} />
-);
+); */
 
 @connect((state) => state)
 export default class Home extends React.Component {
@@ -100,7 +114,7 @@ export default class Home extends React.Component {
               <Row>
                 <Col xs={12}>
                   <p>{this.props.greetings.hello}</p>
-                  {MultipleCloud}
+                  {MultipleCloud(data)}
                 </Col>
               </Row>
             </Grid>
